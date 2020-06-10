@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+header {
+    height: 105px;
+    background: #ded9d6;
+    display: flex;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+header li {
+    width: 100px;
+    padding: 10px 0;
+    background: #787471;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+header li:first-of-type {
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+header li:last-of-type {
+    width: 300px;
+    margin-right: 50px;
+    border-radius: 5px;
+    padding: 0;
+}
+header li:last-of-type input {
+    width: 300px;
+    margin-right: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+}
+header li:nth-of-type(7) {
+    background: #454341;
+}
+.featured-articles-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 150vh;
+    padding: 80px;
+    border: 5px solid red;
+}
+.top-featured {
+    padding-top: 300px;
+    width: 50%;
+}
+.featured-articles-wrap:nth-child(1) {
+    background: #aba5a2
+}
+.featured-articles-wrap:nth-child(2) {
+    background: #a2a8ab
+}
+.featured-articles-wrap:nth-child(3) {
+    background: #a8a2ab
+}
+.featured-articles-wrap:nth-child(4) {
+    background: #abaaa2
+}
