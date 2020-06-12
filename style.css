@@ -110,18 +110,23 @@ header li:nth-of-type(7) {
     padding: 75px 125px 0 75px;
 }
 .featured-articles-wrap > div:nth-child(1) {
-    background: #c7c7c7c7;
+    background: #696969;
+    color: white;
     padding-top: 250px;
+    
 }
 .featured-articles-wrap > div:nth-child(2) {
-    background: #d7d7d7d7;
+    background: #787574;
+    color: white;
     padding-top: 250px;
 }
 .featured-articles-wrap > div:nth-child(3) {
-    background: #a7a7a7a7;
+    background: #6b6868;
+    color: white;
 }
 .featured-articles-wrap > div:nth-child(4) {
-    background: #b7b7b7b7;
+    background: #7d7a79;
+    color: white;
 }
 .author-box {
     display: flex;
@@ -199,9 +204,10 @@ header li:nth-of-type(7) {
     font: small-caps 100 12px Martel, serif;
 }
 .post-title {
-    font: 500 30px/1.3 sans-serif;
+    font: 500 30px/1.3 Quicksand, sans-serif;
     text-decoration: underline;
     width: 75%;
+    letter-spacing: .8;
 }
 .post-author {
     font: 600 14px sans-serif;
@@ -222,7 +228,7 @@ header li:nth-of-type(7) {
     align-self: flex-end;
 }
 /*Sign up and Supporters section*/
-.members-wrap {
+.smashing-members {
     display: flex;
     margin-top: 25px;
     padding: 75px;
@@ -230,13 +236,74 @@ header li:nth-of-type(7) {
 .supporters-wrap {
     flex: 1 1 375px;
     margin-right: 15px; 
-    background: burlywood;
     height: 500px;
-    border-radius: 12px;
 }
-.supporters-wrap + div {
+.supporters-wrap > div {
+    border-radius: 12px;
+    height: 215px;
+    background: #c4bfbe;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.supporters-wrap > p {
+    text-align: center;
+    font: 14px 'Cormorant Garamond', serif;
+}
+.supporters-wrap > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.supporters-wrap > div > p:first-child {
+    font: 700 30px/0.6 Quicksand, serif;
+    text-transform: lowercase;
+}
+.supporters-wrap > div > p:last-child {
+    font: 18px "Times New Roman", serif;
+}
+.supporters-wrap > div button {
+    font: 600 20px Quicksand, serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.members-wrap {
     flex: 1 1 875px;
-    background: crimson;
-    height: 500px;
+    background: #706d6c;
+    height: 600px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 150px;
+    color: white;
+    text-align: center;
 }
+.members-wrap > div {
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    background: #ccc7c6
+}
+.members-wrap > p:first-of-type {
+    font: 600 40px/0.6 Quicksand, sans-serif;
+    letter-spacing: 0.6;
+    text-decoration: underline;
+}
+.members-wrap > p:nth-of-type(2) {
+    font: 100 16px Martel, serif;
+}
+.members-wrap > button {
+    font: 600 20px Quicksand, serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.members-wrap > p:last-of-type {
+    font: 100 12px Martel, serif;
+}
+
