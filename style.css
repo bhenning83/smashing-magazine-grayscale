@@ -231,7 +231,7 @@ header li:nth-of-type(7) {
 .smashing-members {
     display: flex;
     margin-top: 25px;
-    padding: 75px;
+    padding: 75px 75px 0 75px;
 }
 .supporters-wrap {
     flex: 1 1 375px;
@@ -306,4 +306,85 @@ header li:nth-of-type(7) {
 .members-wrap > p:last-of-type {
     font: 100 12px Martel, serif;
 }
+/* Second latest posts section */
+.latest-posts-wrap {
+    display: flex;
+    padding: 0 50px;
+    height: 490px;
+}
+.latest-posts-wrap > div {
+    flex: 1;
+    background: #fff;
+    padding: 60px 10px 0 20px;
 
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest-posts-wrap > div > * {
+    flex: 1 1 100%;
+}
+.post-date {
+    color: #a1a1a1;
+    font: small-caps 100 12px Martel, serif;
+}
+.post-title {
+    font: 500 30px/1.3 Quicksand, sans-serif;
+    text-decoration: underline;
+    width: 75%;
+    letter-spacing: .8;
+}
+.post-author {
+    font: 600 14px sans-serif;
+    margin: 30px 0;
+    color: #858483;
+}
+.post-author span {
+    text-decoration: underline;
+}
+.post-preview {
+    font: 200 18px/1.7 Martel, serif;
+    color: #636261;
+    margin-bottom: 30px;
+    height: 180px;
+}
+.arrow {
+    font-size: 24px;
+    align-self: flex-end;
+}
+/*Smasthing TV*/
+.members-wrap {
+    flex: 1 1 875px;
+    background: #706d6c;
+    height: 600px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 150px;
+    color: white;
+    text-align: center;
+}
+.members-wrap > div {
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    background: #ccc7c6
+}
+.members-wrap > p:first-of-type {
+    font: 600 40px/0.6 Quicksand, sans-serif;
+    letter-spacing: 0.6;
+    text-decoration: underline;
+}
+.members-wrap > p:nth-of-type(2) {
+    font: 100 16px Martel, serif;
+}
+.members-wrap > button {
+    font: 600 20px Quicksand, serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.members-wrap > p:last-of-type {
+    font: 100 12px Martel, serif;
+}
